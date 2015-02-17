@@ -13,12 +13,12 @@
 #
 # == Usage
 #
-#   class { 'krb5::rootusers': users => [ 'foo@baz.com', 'bar@baz.com' ] }
+#   class { 'root_k5login': users => [ 'foo@baz.com', 'bar@baz.com' ] }
 #
 class root_k5login (
   $file  = '/root/.k5login',
   $users = hiera_array('root_users', [])
 ) {
   validate_array ($users)
-  k5login { $file: principals => $users, purge => true }
+  k5login_manage { $file: principals => $users, purge => true }
 }

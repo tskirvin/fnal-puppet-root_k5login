@@ -1,6 +1,6 @@
 {
   "name": "fnal-puppet-root_k5login",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Tim Skirvin <tskirvin@fnal.gov>",
   "summary": "manage /root/.k5login",
   "license": "Artistice License, Version 2.0",
